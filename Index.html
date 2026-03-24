@@ -212,7 +212,7 @@ margin-bottom:40px;line-height:1;
 .d-img:hover img{opacity:.86}
 
 /* ── PANEL 5: FOOTER ── */
-#p5{justify-content:space-between;padding:0 48px;flex-direction:column}
+#p5{justify-content:space-between;padding:0 48px;flex-direction:column;align-items:stretch}
 .f-top{flex:1;display:flex;align-items:center;justify-content:center}
 .f-logo-text{
 font-family:‘Bebas Neue’,sans-serif;
@@ -221,6 +221,21 @@ letter-spacing:.06em;
 color:rgba(222,218,211,.08);
 text-align:center;
 line-height:1;
+}
+.f-center{flex:1;display:flex;align-items:center;justify-content:center;width:100%}
+.f-quote{
+display:flex;flex-direction:column;align-items:center;
+gap:.08em;
+font-weight:300;
+letter-spacing:.08em;
+line-height:1;
+color:rgba(222,218,211,.28);
+text-align:center;
+font-style:italic;
+}
+.f-quote span{
+display:block;
+font-size:clamp(28px,10vw,96px);
 }
 .f-bottom{
 padding:32px 0;
@@ -257,6 +272,21 @@ nav{padding:24px 22px}
 .d-right{flex:1;padding:24px 22px}
 .d-img{max-width:100%}
 #p5{padding:0 22px}
+.f-center{flex:1;display:flex;align-items:center;justify-content:center;width:100%}
+.f-quote{
+display:flex;flex-direction:column;align-items:center;
+gap:.08em;
+font-weight:300;
+letter-spacing:.08em;
+line-height:1;
+color:rgba(222,218,211,.28);
+text-align:center;
+font-style:italic;
+}
+.f-quote span{
+display:block;
+font-size:clamp(28px,10vw,96px);
+}
 .f-bottom{flex-direction:column;gap:16px;align-items:flex-start}
 body{cursor:auto}#cur{display:none}
 #prog{display:none}
@@ -349,18 +379,20 @@ body{cursor:auto}#cur{display:none}
   <!-- ── PANEL 5: FOOTER ── -->
 
   <div class="panel" id="p5">
-    <div class="f-top">
-      <p class="f-logo-text">The Aware<br>House</p>
-    </div>
-    <div class="f-bottom">
-      <ul class="f-links">
-        <li><a href="https://instagram.com/based.barber" target="_blank" rel="noopener noreferrer">Based Barber</a></li>
-        <li><a href="https://instagram.com/godtripmiami" target="_blank" rel="noopener noreferrer">God Trip</a></li>
-        <li><a href="https://instagram.com/the.aware.house" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="#" onclick="document.getElementById('scroller').scrollTo({top:document.getElementById('p2').offsetTop,behavior:'smooth'});return false;">Join</a></li>
-      </ul>
-      <p class="f-dom">theaware.house</p>
-    </div>
+
+```
+<div class="f-quote">It's always now.</div>
+<div class="f-bottom">
+  <ul class="f-links">
+    <li><a href="https://instagram.com/based.barber" target="_blank" rel="noopener noreferrer">Based Barber</a></li>
+    <li><a href="https://instagram.com/godtripmiami" target="_blank" rel="noopener noreferrer">God Trip</a></li>
+    <li><a href="https://instagram.com/the.aware.house" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a href="#" onclick="document.getElementById('scroller').scrollTo({top:document.getElementById('p2').offsetTop,behavior:'smooth'});return false;">Join</a></li>
+  </ul>
+  <p class="f-dom">theaware.house</p>
+</div>
+```
+
   </div>
 
 </div><!-- /scroller -->
